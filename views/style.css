@@ -1,0 +1,18 @@
+nav {
+	height:100px;
+	width:600px;
+
+}
+
+nav li {
+	height:100%;
+	width:19%;
+	display: inline-block;
+}
+
+p {
+
+	font-size: 40px;
+	color:red;
+
+}
