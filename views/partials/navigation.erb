@@ -1,9 +1,11 @@
 <nav>
 	<ul>
+		
 		<li> <a href="/">Home</a></li>
-		<li> <a href="../teas/english-breakfast">English Breakfast</li>
-		<li> <a href="/teas/herbal.erb">Herbal</a></li>
-		<li> <a href="/teas/earl-grey.erb">Earl Grey</a></li>
-		<li> <a href="/teas/green">Green</a></li>
+		<% @teas.each do |tea| %>
+
+		<li> <a href="/teas/<%=tea[:id] %>"> <%= tea[:title] %></a></li>
+
+		<% end %>
 	</ul>
 </nav>
